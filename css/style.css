@@ -1,0 +1,37 @@
+    body, html {
+  height: 100%!important;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url('../images/img_parallax.jpg');
+opacity: 0.65;
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-color{
+     background-color: rgba(87, 210, 227, 0.377);
+}
+#logo{
+    height:100px;
+}
+.navbar-brand{
+    margin-left:4em;
+}
+.nav-item {
+padding-left: 1em;
+font-size:1.2em;
+}
+
+#navbarCollapse{
+    margin-right:4em;
+}
+.nav-link{
+    color:#f58634!important;
+}
