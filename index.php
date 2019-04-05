@@ -13,41 +13,49 @@
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" >
+    <!-- <link href="css/bootstrap_3.min.css" rel="stylesheet" > -->
     <!-- Style propietario -->
     <link href="css/style.css" rel="stylesheet" >
     <link href="css/carousel.css" rel="stylesheet" >
 
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+<!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"> -->
 
     <style>
-
+ 
     </style>
     
   </head>
   <body>
       <div class="parallax"></div>
       <header>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-color">
-    <a class="navbar-brand" href="#"><img src="images/logo.png" id="logo"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Serviços</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Como funciona</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contato</a>
-        </li>
-      </ul>
+      <nav class="navbar navbar-light navbar-fixed-top">
+    <div class="container-fluid d-flex">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar_menu" aria-expanded="false">
+                <span class="fa fa-bars"></span>
+            </button>
+            <a href="#" class="navbar-brand">
+                <img src="images/logo.png" id="logo">
+            </a>
+            <!--
+            <a href="#" class="navbar-brand">
+                <img src="../site/img/simbolo.png" class="img-responsive">
+                Automatize Sistemas
+            </a>
+            -->
+        </div>
+        <div class="collapse navbar-collapse" id="navbar_menu">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a class="" href="#mn_home">Inicio</a></li>
+                <li><a class="" href="#mn_empresa">Serviços</a></li>
+                <li><a class="" href="#mn_solucoes">Como funciona</a></li>
+                <li><a class="" href="#mn_cases">Contato</a></li>
+                
+            </ul>
+        </div>
     </div>
-  </nav>
+</nav>
 </header>
 
 <main role="main">
@@ -135,6 +143,26 @@
     <p>&copy; 2017-2019 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
   </footer>
 </main>
-<script src="js/jquery-3.3.1.slim.min.js" ></script>
-      <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script><script src="js/bootstrap.bundle.min.js" ></script></body>
+<script src="js/jquery-1.12.0.min.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(window).on('scroll', function() {
+            if ($(window).scrollTop() >= 20) {
+                $('.navbar').addClass('compressed');
+                $('.navbar-nav').addClass('changecolormenu');
+                $('.navbar-brand').addClass('changecolorlogo');
+                
+            } else {
+                $('.navbar').removeClass('compressed');
+                $('.navbar-nav').removeClass('changecolormenu');
+                $('.navbar-brand').removeClass('changecolorlogo');
+            }
+        });
+    });
+</script>
 </html>
+
+
+
