@@ -1,6 +1,5 @@
     body, html {
   height: 100%!important;
-
 }
 
 .parallax {
@@ -17,7 +16,7 @@ opacity: 0.65;
   background-size: cover;
 }
 .bg-color{
-     background-color: rgba(0, 0, 0, 0.377);
+    background-color: rgba(0, 0, 0, 0.377);
 }
 #logo{
     height:100px;
@@ -28,8 +27,8 @@ opacity: 0.65;
     margin-left:4em;
 }
 .nav-item {
-padding-left: 1em;
-font-size:1.2em;
+	padding-left: 1em;
+	font-size:1.2em;
 }
 
 #navbarCollapse{

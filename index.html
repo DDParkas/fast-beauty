@@ -1,65 +1,46 @@
-
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v3.8.5">
+    <meta name="generator" content="Visual studio code">
     <title>Fast Beauty</title>
-
     <link rel="canonical" href="#">
-
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" >
-    <!-- <link href="css/bootstrap_3.min.css" rel="stylesheet" > -->
     <!-- Style propietario -->
     <link href="css/style.css" rel="stylesheet" >
     <link href="css/carousel.css" rel="stylesheet" >
-
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
-<!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"> -->
-
-    <style>
- 
-    </style>
->
-    
   </head>
   <body>
-      <div class="parallax" id="ac_home"></div>
-      <header>
-      <nav class="navbar navbar-light navbar-fixed-top">
-    <div class="container-fluid d-flex">
-        <div class="navbar-header nav">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar_menu" aria-expanded="false">
-                <span class="fa fa-bars"></span>
-            </button>
-            <a href="#ac_home" class="navbar-brand">
-                <img src="images/logo.png" id="logo">
-            </a>
-            <!--
-            <a href="#" class="navbar-brand">
-                <img src="../site/img/simbolo.png" class="img-responsive">
-                Automatize Sistemas
-            </a>
-            -->
-        </div>
-        <div class="collapse navbar-collapse nav" id="navbar_menu" >
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#ac_home">Inicio</a></li>
-                <li><a href="#mn_empresa">Serviços</a></li>
-                <li><a href="#mn_solucoes">Como funciona</a></li>
-                <li><a href="#mn_cases">Contato</a></li>
-                
-            </ul>
-        </div>
-    </div>
-</nav>
-</header>
+	<div class="parallax" id="ac_home"></div>
+	<header>
+		<nav class="navbar navbar-light navbar-fixed-top">
+			<div class="container-fluid d-flex">
+				<div class="navbar-header nav">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar_menu" aria-expanded="false">
+						<span class="fa fa-bars"></span>
+					</button>
+					<a href="#ac_home" class="navbar-brand">
+						<img src="images/logo.png" id="logo">
+					</a>
+				</div>
+				<div class="collapse navbar-collapse nav" id="navbar_menu" >
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#ac_home">Inicio</a></li>
+						<li><a href="#ac_servicos">Serviços</a></li>
+						<li><a href="#ac_comoFunciona">Como funciona</a></li>
+						<li><a href="#ac_contato">Contato</a></li>
+						
+					</ul>
+				</div>
+			</div>
+		</nav>
+    </header>
 
-<main role="main">
+    <main role="main">
 
 
 
@@ -137,45 +118,45 @@
 
   </div><!-- /.container -->
 
+		<!-- FOOTER -->
+		<footer class="container">
+			<p class="float-right nav"><a href="#ac_home">Voltar ao topo</a></p>
+			<p>&copy; 2019 Fast Beauty, Inc. &middot; <a href="#">Codigo de privacidade</a> &middot; <a href="#">Termos de uso</a></p>
+		</footer>
+	</main>
 
-  <!-- FOOTER -->
-  <footer class="container">
-    <p class="float-right nav"><a href="#ac_home">Voltar ao topo</a></p>
-    <p>&copy; 2019 Fast Beauty, Inc. &middot; <a href="#">Codigo de privacidade</a> &middot; <a href="#">Termos de uso</a></p>
-  </footer>
-</main>
-<script src="js/jquery-1.12.0.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery-1.12.0.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 
-<!-- Transição do menu -->
-<script type="text/javascript">
-    $(document).ready(function() {
-        $(window).on('scroll', function() {
-            if ($(window).scrollTop() >= 20) {
-                $('.navbar').addClass('compressed');
-                $('.navbar-nav').addClass('changecolormenu');
-                $('.navbar-brand').addClass('changecolorlogo');
-                
-            } else {
-                $('.navbar').removeClass('compressed');
-                $('.navbar-nav').removeClass('changecolormenu');
-                $('.navbar-brand').removeClass('changecolorlogo');
-            }
-        });
-    });
-</script>
-<!-- rolagem -->
+	<!-- Transição do menu -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(window).on('scroll', function() {
+				if ($(window).scrollTop() >= 20) {
+					$('.navbar').addClass('compressed');
+					$('.navbar-nav').addClass('changecolormenu');
+					$('.navbar-brand').addClass('changecolorlogo');
+				} else {
+					$('.navbar').removeClass('compressed');
+					$('.navbar-nav').removeClass('changecolormenu');
+					$('.navbar-brand').removeClass('changecolorlogo');
+				}
+			});
+		});
+	</script>
+	
+	<!-- rolagem -->
     <script>
-$('.nav a[href^="#"]').on('click', function(e) {
-	e.preventDefault();
-	var id = $(this).attr('href'),
-			targetOffset = $(id).offset().top;
-			
-	$('html, body').animate({ 
-		scrollTop: targetOffset - 100
-	}, 500);
-});
-</script
+      $('.nav a[href^="#"]').on('click', function(e) {
+        e.preventDefault();
+        var id = $(this).attr('href'),
+  			targetOffset = $(id).offset().top;
+        $('html, body').animate({
+          scrollTop: targetOffset - 100
+        }, 500);
+      });
+    </script>
+  </body>
 </html>
 
 
