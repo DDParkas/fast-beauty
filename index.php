@@ -24,18 +24,19 @@
     <style>
  
     </style>
+>
     
   </head>
   <body>
-      <div class="parallax"></div>
+      <div class="parallax" id="ac_home"></div>
       <header>
       <nav class="navbar navbar-light navbar-fixed-top">
     <div class="container-fluid d-flex">
-        <div class="navbar-header">
+        <div class="navbar-header nav">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar_menu" aria-expanded="false">
                 <span class="fa fa-bars"></span>
             </button>
-            <a href="#" class="navbar-brand">
+            <a href="#ac_home" class="navbar-brand">
                 <img src="images/logo.png" id="logo">
             </a>
             <!--
@@ -45,12 +46,12 @@
             </a>
             -->
         </div>
-        <div class="collapse navbar-collapse" id="navbar_menu">
+        <div class="collapse navbar-collapse nav" id="navbar_menu" >
             <ul class="nav navbar-nav navbar-right">
-                <li><a class="" href="#mn_home">Inicio</a></li>
-                <li><a class="" href="#mn_empresa">Serviços</a></li>
-                <li><a class="" href="#mn_solucoes">Como funciona</a></li>
-                <li><a class="" href="#mn_cases">Contato</a></li>
+                <li><a href="#ac_home">Inicio</a></li>
+                <li><a href="#mn_empresa">Serviços</a></li>
+                <li><a href="#mn_solucoes">Como funciona</a></li>
+                <li><a href="#mn_cases">Contato</a></li>
                 
             </ul>
         </div>
@@ -139,13 +140,14 @@
 
   <!-- FOOTER -->
   <footer class="container">
-    <p class="float-right"><a href="#">Back to top</a></p>
-    <p>&copy; 2017-2019 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    <p class="float-right nav"><a href="#ac_home">Voltar ao topo</a></p>
+    <p>&copy; 2019 Fast Beauty, Inc. &middot; <a href="#">Codigo de privacidade</a> &middot; <a href="#">Termos de uso</a></p>
   </footer>
 </main>
 <script src="js/jquery-1.12.0.min.js"></script>
-
 <script src="js/bootstrap.min.js"></script>
+
+<!-- Transição do menu -->
 <script type="text/javascript">
     $(document).ready(function() {
         $(window).on('scroll', function() {
@@ -162,6 +164,18 @@
         });
     });
 </script>
+<!-- rolagem -->
+    <script>
+$('.nav a[href^="#"]').on('click', function(e) {
+	e.preventDefault();
+	var id = $(this).attr('href'),
+			targetOffset = $(id).offset().top;
+			
+	$('html, body').animate({ 
+		scrollTop: targetOffset - 100
+	}, 500);
+});
+</script
 </html>
 
 
