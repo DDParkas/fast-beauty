@@ -296,3 +296,211 @@ strong {
 @media (max-width: 768px) { 
 
 }
+
+/* ==== como funciona ===*/
+.msr_flow03 {
+  color: #000000;
+  list-style: none;
+  overflow: hidden;
+}
+.msr_flow03 li {
+  background-color: #F8F8F8;
+  color: #1B73BA;
+  float: left;
+  font-size: 13px;
+  display: block;
+  line-height: 60px;
+  text-align: center;
+  text-decoration: none;
+  min-width: 100px;
+  padding: 0 10px 0 40px;
+}
+.msr_flow03 li:first-child {
+  padding-left: 10px;
+}
+
+/* 三角形下部 */
+.msr_flow03 li::after {
+  background-color: #F8F8F8;
+  box-shadow: 2px 0 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 2px 0 0px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 2px 0 0px rgba(0,0,0,0.2);
+  content: " ";
+  display: block;
+  height: 30px;
+  margin-left: auto;
+  margin-right: -30px;
+  margin-top: -30px;
+  position: relative;
+  transform: skew(-30deg);
+  -o-transform: skew(-30deg);
+  -ms-transform: skew(-30deg);
+  -moz-transform: skew(-30deg);
+  -webkit-transform: skew(-30deg);
+  width: 30px;
+}
+
+/* 三角形上部 */
+.msr_flow03 li::before {
+  background-color: #F8F8F8;
+  box-shadow: 2px 0 2px rgba(0,0,0,0.2);
+  -moz-box-shadow: 2px 0 2px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 2px 0 2px rgba(0,0,0,0.2);
+  content: " ";
+  display: block;
+  float: right;
+  height: 30px;
+  margin-bottom: -30px;
+  margin-left: auto;
+  margin-right: -30px;
+  transform: skew(30deg);
+  -o-transform: skew(30deg);
+  -ms-transform: skew(30deg);
+  -moz-transform: skew(30deg);
+  -webkit-transform: skew(30deg);
+  width: 30px;
+}
+
+/* 右端の設定 */
+.msr_flow03 .active {
+  background-color: #1B73BA;
+  color: #FFFFFF;
+}
+.msr_flow03 .active::before, .msr_flow03 .active::after {
+  background-color: #1B73BA;
+}
+
+.step{
+  list-style-type: none;
+  display:table;
+  width:100%;
+  padding:0;
+  margin:0;
+  overflow:hidden;
+}
+.step li{
+  display:table-cell;
+  position:relative;
+  background: #fff;
+  padding: 1em 0.5em 1em 2em;
+  color: #113063;
+  border: 2px solid #113063;
+}
+.step li:last-child{
+  padding-right: 1em;
+}
+.step li:last-child:before,
+.step li:last-child:after{
+  display:none;
+}
+.step li:before,
+.step li:after{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin: auto;
+}
+.step li:before{
+  top:-15px;
+  right:-1em;
+  border-style: solid;
+  border-color: transparent transparent transparent #fff;
+  border-width: 40px 0 40px 1em;
+  z-index: 10;
+}
+.step li:after{
+  top:-15px;
+  right:-.8em;
+  border-style: solid;
+  border-color: transparent transparent transparent #113063;
+  border-width: 40px 0 40px 1em;
+  z-index: 10;
+}
+.step li.is-current{
+  background: #9bbb30;
+  font-weight: bold;
+}
+.step li.is-current:after{
+  border-color: transparent transparent transparent #9bbb30;
+}
+ 
+.step li span:before,
+.step li span:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  display: block;
+  with: 0;
+  height: 0;
+  border-style: solid;
+}
+.step li span:before {
+  left: 0;
+  border-color: transparent transparent transparent #fff;
+  border-width: 30px 0 30px 1em;
+}
+
+
+/* ==== section ===*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.section-box {
+  display: flex;
+  height: 100vh;
+}
+
+.section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  transition: flex .4s ease;
+  position: relative;
+}
+
+.section .overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: background-color .8s ease;
+}
+
+.section .content {
+  z-index: 2;
+}
+
+.section:hover {
+  flex: 2;
+}
+
+.section:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.95);
+}
+
+#marketing {
+  background-image: url(https://images.unsplash.com/photo-1522205987242-8e22924ab42a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c0f679eb8f15705d46ea90008f39642b&auto=format&fit=crop&w=500&q=60);
+}
+
+
+#technology {
+  background-image: url(https://images.unsplash.com/photo-1530893609608-32a9af3aa95c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fe6b92f88f55824e64a1bae15f5bf52a&auto=format&fit=crop&w=500&q=60);
+}
+
+#advertising {
+  background-image: url(https://images.unsplash.com/photo-1517799094725-e3453440724e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=353f3663a9fae75773d2942aeb37c2c8&auto=format&fit=crop&w=500&q=60);
+}
