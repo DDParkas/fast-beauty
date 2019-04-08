@@ -1,6 +1,13 @@
     body, html {
-  height: 100%!important;
+     height: 100%!important;
+     -ms-overflow-style: none;  /* IE 10+ */
+    scrollbar-width: none;      /* Firefox */
+ 
 }
+::-webkit-scrollbar { 
+    display: none; 
+}
+
 
 .parallax {
   /* The image used */
@@ -489,7 +496,7 @@ body {
 }
 
 .section:hover .overlay {
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: rgba(0, 0, 0, 0.270);
 }
 
 #marketing {
