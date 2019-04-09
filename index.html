@@ -41,77 +41,111 @@
     </header>
 
     <main role="main">
-	
+      <p class="quebra-de-linha" id="ac_comoFunciona"></p>
+      <div id="infografico"><img src="images/infografico.png"></div>
+      <p class="quebra-de-linha"></p>
 
-<!-- ==================== Como funciona ====================-->
-<ul class="msr_flow03">
-  <li>Flowchart</li>
-  <li>Flowcart</li>
-  <li class="active">Flowchart</li>
-</ul>
-<!-- ==================== Como funciona ====================-->
+<!-- ==================== Como funciona ====================--
+  Envolve o resto da página em outro container, para centralizar todo o conteúdo.
+  <p class="quebra-de-linha" id="ac_comoFunciona" ></p>
+  <div class="container marketing overlay ">
+
+  
+   
+    <div class="row">
+      <div class="col-lg-4">
+        <img class="rounded-circle"
+          src="images/icons/pay.png"
+          alt="Generic placeholder image" width="140" height="140">
+        <h2>Título</h2>
+        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula
+          ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+      </div>
+      <div class="col-lg-4">
+        <img class="rounded-circle"
+          src="images/icons/location.png"
+          alt="Generic placeholder image" width="140" height="140">
+        <h2>Título</h2>
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis
+          consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
+        </p>
+        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+      </div>
+      <div class="col-lg-4">
+        <img class="rounded-circle"
+          src="images/icons/card.png"
+          alt="Generic placeholder image" width="140" height="140">
+        <h2>Título</h2>
+        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta
+          felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
+          massa justo sit amet risus.</p>
+        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+      </div>
+    </div>
+    </div>
+
+-- ==================== Como funciona ====================-->
 
 <!-- ==================== Serviços ====================-->
 <div class="section-box" id="ac_servicos">
   <div id="marketing" class="section">
     <div class="content">
-      <h1>Marketing</h1>
+      <h1>Manicure</h1>
     </div>
     <div class="overlay"></div>
   </div>
   <div id="technology" class="section">
     <div class="content">
-      <h1>Technology</h1>
+      <h1>Cabelo</h1>
     </div>
     <div class="overlay"></div>
   </div>
   <div id="advertising" class="section">
     <div class="content">
-      <h1>Advertising</h1>
+      <h1>Massagem</h1>
     </div>
     <div class="overlay"></div>
   </div>
 </div>
 <!-- ==================== Serviços ====================-->
 
-    <!-- START THE FEATURETTES -->
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+    <!--=============== Contato =========================-->
+    <p class="quebra-de-linha" id="ac_contato"></p>
+    <div class="container"> 
+    <form>
+        <div class="form-group ">
+          <label class="control-label" for="inputSuccess1">Nome:</label>
+          <input type="text" class="form-control" id="inputSuccess1" aria-describedby="helpBlock2">
+          <span id="helpBlock2" class="help-block">A block of help text that breaks onto a new line and may extend beyond one
+            line.</span>
+        </div>
+        <div class="form-group ">
+          <label class="control-label" for="inputWarning1">E-mail:</label>
+          <input type="text" class="form-control" id="inputWarning1">
+        </div>
+        <div class="form-group ">
+          <label class="control-label" for="inputError1">Assunto:</label>
+          <input type="text" class="form-control" id="inputError1">
+        </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Mensagem:</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
-      <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+      <div class="form-group">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" id="checkboxSuccess" value="option1">
+            Aceito os termos de privacidade
+          </label>
+        </div>
       </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      <button type="button" class="btn btn-primary btn-lg navbar-right">Enviar</button>
+      
+        
+        </form>
       </div>
-      <div class="col-md-5 order-md-1">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-      </div>
-      <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-      </div>
-    </div>
-
+    <!--=============== Contato =========================-->
     <hr class="featurette-divider">
 
     <!-- /END THE FEATURETTES -->
@@ -152,7 +186,7 @@
         var id = $(this).attr('href'),
   			targetOffset = $(id).offset().top;
         $('html, body').animate({
-          scrollTop: targetOffset - 50
+          scrollTop: targetOffset - 60
         }, 500);
       });
     </script>
