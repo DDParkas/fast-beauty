@@ -44,7 +44,13 @@ opacity: 0.65;
 .nav-link{
     color:#f58634!important;
 }
-
+#entrar-cadastrar{
+    color:#f4511e!important;
+    border: 1px solid;  
+    border-color:#f4511e;
+    border-radius:8px;
+    font-size:.8em;
+}
 
 /*           Nav bar ------------------------------------------------------*/
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
@@ -206,7 +212,8 @@ strong {
 } */
 
 .navbar-nav.changecolormenu a,
-.navbar-nav.changecolormenu a.active {
+.navbar-nav.changecolormenu a.active, 
+.navbar-nav.changecolormenu #entrar-cadastrar {
     color: white !important;
 }
 
