@@ -10,38 +10,52 @@
     <link rel="canonical" href="#">
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" >
+    
     <!-- Style propietario -->
     <link href="css/style.css" rel="stylesheet" >
     <link href="css/carousel.css" rel="stylesheet" >
   </head>
   <body>
-	<div class="parallax" id="ac_home"></div>
+    <h1 style="position:absolute; ">teste</h1>
+  <div class="parallax" id="ac_home"></div>
+  
 	<header>
-		<nav class="navbar navbar-light navbar-fixed-top">
-			<div class="container-fluid d-flex">
-				<div class="navbar-header nav">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar_menu" aria-expanded="false">
-						<span class="fa fa-bars"></span>
-					</button>
-					<a href="#ac_home" class="navbar-brand">
-						<img src="images/logo.png" id="logo">
-					</a>
-				</div>
-				<div class="collapse navbar-collapse nav" id="navbar_menu" >
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#ac_home">Inicio</a></li>
-						<li><a href="#ac_comoFunciona">Como funciona</a></li>
-						<li><a href="#ac_servicos">Serviços</a></li>
-						<li><a href="#ac_contato">Contato</a></li>
-						<li><a href="#" id="entrar-cadastrar">Entrar / Cadastrar</a></li>
-						
-					</ul>
-				</div>
-			</div>
-		</nav>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a href="#ac_home" class="navbar-brand">
+        <img src="images/logo.png" id="logo" style="position:absolute; margin-top:-1em;">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+         
+        </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#ac_home" class="nav-link">Inicio</a></li>
+        <li><a href="#ac_comoFunciona" class="nav-link">Como funciona</a></li>
+        <li><a href="#ac_servicos" class="nav-link">Serviços</a></li>
+        <li><a href="#ac_contato" class="nav-link">Contato</a></li>
+        <li><button type="button" class="btn btn-link" data-toggle="modal" data-target="#ExemploModalCentralizado"
+            id="entrar-cadastrar" class="nav-link">
+            Entrar / Cadastrar
+          </button></li>
+          
+      
+      </ul>
+        
+      </div>
+    </nav>
+    
     </header>
 
     <main role="main">
+  
+  
+  
+
       <p class="quebra-de-linha" id="ac_comoFunciona"></p>
       <div id="infografico"><img src="images/infografico.png"></div>
       <p class="quebra-de-linha"></p>
@@ -160,8 +174,9 @@
 		</footer>
 	</main>
 
-	<script src="js/jquery-1.12.0.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<<script src="js/jquery-1.12.0.min.js" ></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+        <script src="form-validation.js"></script></body>
 
 	<!-- Transição do menu -->
 	<script type="text/javascript">
@@ -194,7 +209,47 @@
 	
 	<!-- chart -->
 	<script src="js/chart.js">
-	</script>
+  </script>
+  <!---====================================== MODAL =====================================================-->
+
+<!-- Modal -->
+
+<div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+  <form>
+    <div class="form-group">
+      <label for="email-login">E-mail:</label>
+      <input type="email" class="form-control" id="email-login" placeholder="email@exemplo.com" name="email">
+    </div>
+    <div class="form-group">
+      <label for="senha-login">Senha:</label>
+      <input type="password" class="form-control" id="senha-login" placeholder="********" name="pass">
+    </div>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+      <label class="form-check-label" for="dropdownCheck2">
+        Lembrar
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary float-right">Entrar</button>
+  </form>
+      </div>
+      <div class="modal-footer">
+        <a class="nav-link" href="#">Esqueci minha senha</a>
+        <a class="nav-link" href="#">Cadastrar-se</a>
+      </div>
+    </div>
+  </div>
+</div>
+  <!---====================================== MODAL =====================================================-->
   </body>
 </html>
 
