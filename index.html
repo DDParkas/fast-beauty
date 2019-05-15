@@ -14,20 +14,78 @@
     <!-- Style propietario -->
     <link href="css/style.css" rel="stylesheet" >
     <link href="css/carousel.css" rel="stylesheet" >
+    <link href="css/theme.css" rel="stylesheet" >
   </head>
   <body>
-    <h1 style="position:absolute; ">teste</h1>
-  <div class="parallax" id="ac_home"></div>
+    
+   
+  <div class="parallax" id="ac_home">
+    <!-- Main Content -->
+    <div class="d-lg-flex align-items-lg-center height-85vh--lg ">
+      <div class="container space-2 space-0--lg mt-lg-8">
+        <div class="row justify-content-lg-between align-items-lg-center">
+          <div class="col-lg-5 mb-7 mb-lg-0">
+            <!-- Title -->
+            <span class="d-block text-white text-uppercase mb-2">Cadastre-se agora!</span>
+            <h1 class="display-4 font-size-48--md-down text-white mb-0 mobile-title">Um jeito Fast de ficar Beauty</h1>
+            <!-- End Title -->
+          </div>
+    
+          <div class="col-lg-5">
+            <!-- Signup Form -->
+            <div class="bg-white shadow-sm rounded p-6">
+              <form class="js-validate">
+                <div class="mb-4">
+                  <h2 class="h4">Experimente!</h2>
+                </div>
+    
+                <!-- Input -->
+                <div class="js-form-message mb-3">
+                  <div class="js-focus-state input-group input-group form">
+                    <input type="text" class="form-control form__input" name="username" required
+                      placeholder="Nome Completo" aria-label="Nome Completo">
+                  </div>
+                </div>
+                <!-- End Input -->
+    
+                <!-- Input -->
+                <div class="js-form-message mb-3">
+                  <div class="js-focus-state input-group input-group form">
+                    <input type="email" class="form-control form__input" name="email" required
+                      placeholder="email@exemplo.com" aria-label="email@exemplo.com">
+                  </div>
+                </div>
+                <!-- End Input -->
+    
+                <!-- Input -->
+                <div class="js-form-message mb-3">
+                  <div class="js-focus-state input-group input-group form">
+                    <input type="password" class="form-control form__input" name="password" required
+                      placeholder="********" aria-label="Senha">
+                  </div>
+                </div>
+                <!-- End Input -->
+    
+                <button type="submit" class="btn btn-block btn-primary">Cadastrar</button>
+              </form>
+            </div>
+            <!-- End Signup Form -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Main Content -->
+  </div>
   
 	<header>
 
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <nav class="navbar navbar-expand-md fixed-top ">
       <a href="#ac_home" class="navbar-brand">
         <img src="images/logo.png" id="logo" style="position:absolute; margin-top:-1em;">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
         aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon">Menu</span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
@@ -40,7 +98,7 @@
         <li><a href="#ac_contato" class="nav-link">Contato</a></li>
         <li><button type="button" class="btn btn-link" data-toggle="modal" data-target="#ExemploModalCentralizado"
             id="entrar-cadastrar" class="nav-link">
-            Entrar / Cadastrar
+            Entrar
           </button></li>
           
       
@@ -175,8 +233,8 @@
 	</main>
 
 	<<script src="js/jquery-1.12.0.min.js" ></script>
-      <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
-        <script src="form-validation.js"></script></body>
+      <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="js/bootstrap.bundle.min.js" ></script>
+        </body>
 
 	<!-- Transição do menu -->
 	<script type="text/javascript">
@@ -244,7 +302,6 @@
       </div>
       <div class="modal-footer">
         <a class="nav-link" href="#">Esqueci minha senha</a>
-        <a class="nav-link" href="#">Cadastrar-se</a>
       </div>
     </div>
   </div>

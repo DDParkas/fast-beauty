@@ -9,10 +9,11 @@
 }
 
 
+
 .parallax {
   /* The image used */
   background-image: url('../images/img_parallax.jpg');
-opacity: 0.65;
+/* opacity: 0.65; */
   /* Full height */
   height: 100%; 
 
@@ -26,9 +27,10 @@ opacity: 0.65;
     background-color: rgba(0, 0, 0, 0.377);
 }
 #logo{
-    height:90px;
-    width:70px;
-    margin-top:-4px;
+    height:110px;
+    width:90px;
+    margin-top:-30px!important;
+    margin-left:50px!important;
 }
 .navbar-brand{
     margin-left:4em;
@@ -46,7 +48,7 @@ opacity: 0.65;
 }
 #entrar-cadastrar{
     color:#f4511e!important;
-   margin-top:.2em;
+   margin-top:-.2em;
     font-size:.8em;
 }
 .navbar-toggler{
@@ -66,9 +68,6 @@ opacity: 0.65;
 /*           Nav bar ------------------------------------------------------*/
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
-body {
-    font-family: 'Poppins', sans-serif;
-}
 
 
 /* marcacao para container ajustar o slide ao clicar no menu, só ficar certo assim */
@@ -315,6 +314,10 @@ strong {
         color: white !important;
         border-radius: 30px;
         background-color: #f6761c;
+    }
+
+    .mobile-title{
+        display: none;
     }
 }
 
