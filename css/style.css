@@ -27,10 +27,21 @@
     background-color: rgba(0, 0, 0, 0.377);
 }
 #logo{
-    height:110px;
-    width:90px;
-    margin-top:-30px!important;
-    margin-left:50px!important;
+    position:absolute; margin-top:-1em;
+       height:150px;
+    width:150px;
+   
+     margin-top:-30px!important;
+    margin-left:70px!important;
+    text-align:center;
+    border-radius:200px;
+}
+#logo img{
+    height:140px;
+   margin-left:-15px;
+   
+    
+   
 }
 .navbar-brand{
     margin-left:4em;
@@ -134,9 +145,6 @@
     left: 5%;
 }
 
-
-
-
 h1 {
     font-size: 60px;
     font-weight: 600;
@@ -169,9 +177,6 @@ strong {
     margin: 30px 0;
     border-bottom: 1px dashed #ddd;
 }
-
-
-
 
 /* NAVBAR */
 .navbar {
