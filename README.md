@@ -1,9 +1,10 @@
 # fast-beauty
+Projeto não finalizado.
 
 
-###creditos 
+## Créditos 
 
-menu Jquery
+menu: Jquery
 
 Paralax: [w3c](https://www.w3schools.com/howto/howto_css_parallax.asp)
 
